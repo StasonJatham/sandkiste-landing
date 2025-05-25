@@ -22,14 +22,6 @@ export default function ComingSoonPage() {
     }
   }, []);
 
-  const getObfuscatedToken = (): string => {
-    const part1 = "SUIwYTVxR3B";
-    const part2 = "NMW1JekVnUE";
-    const part3 = "FITVlrbVRndFE1ajBz";
-
-    return `Token ${atob(part1 + part2 + part3)}`;
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
